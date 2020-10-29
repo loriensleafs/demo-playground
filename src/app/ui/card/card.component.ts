@@ -17,6 +17,7 @@ import { proxyAttr } from "./../../utils";
       border="1px solid divider.light"
       boxShadow="{{ variant }}"
       transition="{{ transition }}"
+      boxSizing="border-box"
       styles="{
         '& > [card-content]': { 'borderRadius': 'md' }
       }"
@@ -61,6 +62,7 @@ export class Card implements AfterViewInit {
       borderRadiusTopLeft="md"
       borderRadiusTopRight="md"
       borderBottom="{{ borderBottom }}"
+      boxSizing="border-box"
     >
       <ng-content></ng-content>
     </div>
@@ -91,7 +93,7 @@ export class CardHeader implements AfterViewInit {
 @Component({
   selector: "card-content",
   template: `
-    <div sx py="6" px="12">
+    <div sx boxSizing="border-box" py="6" px="12">
       <ng-content></ng-content>
     </div>
   `
@@ -124,6 +126,7 @@ export class CardContent implements AfterViewInit {
       borderRadiusBottomLeft="md"
       borderRadiusBottomRight="md"
       borderTop="{{ borderTop }}"
+      boxSizing="border-box"
     >
       <ng-content></ng-content>
     </div>
