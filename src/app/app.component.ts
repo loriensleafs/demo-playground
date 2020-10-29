@@ -25,7 +25,7 @@ import { get, __DEV__ } from "./utils";
     <container sx flex="1">
       <card sx my="12" mx="auto" maxW="96">
         <card-content>
-          <h3 sx m="0">Card Title</h3>
+          <h3 sx m="0">Composed Card Title</h3>
           <p sx m="0" color="text.secondary">Card subtitle</p>
           <p sx color="text.primary">
             Let's display a slider component in your app and verify that
@@ -69,6 +69,7 @@ export class AppComponent implements OnInit {
       },
       ["app-root"]: {
         w: "100%",
+        minH: "100vh",
         display: "flex",
         flexDirection: "column",
         boxSizing: "border-box"
