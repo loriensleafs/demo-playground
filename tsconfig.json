@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "paths": {
+      "@common": [
+        "src/app/ui/index.ts"
+      ],
+      "@common/*": [
+        "src/app/ui/*"
+      ],
+      "@directives": [
+        "src/app/directives/index.ts"
+      ],
+      "@directives/*": [
+        "src/app/directives/*"
+      ],
+      "@utils": [
+        "src/app/utils/index.ts"
+      ],
+      "@utils/*": [
+        "src/app/utils/*"
+      ],
+      "@ui": [
+        "src/app/ui/index.ts"
+      ],
+      "@ui/*": [
+        "src/app/ui/*"
+      ]
+    },
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+		"preserveWhitespaces": true
+  }
+}
